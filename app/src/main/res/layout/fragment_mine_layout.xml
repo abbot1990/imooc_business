@@ -4,6 +4,9 @@
              android:layout_height="match_parent"
              tools:context="com.youdu.imooc_business.view.fragment.MineFragment">
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mine fragment"/>
 
 </FrameLayout>
