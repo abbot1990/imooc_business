@@ -4,8 +4,17 @@ import android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
+import com.youdu.imooc_business.okhttp.CommonOkHttpClient;
+import com.youdu.imooc_business.okhttp.request.CommonRequest;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.Response;
 
 import static org.junit.Assert.*;
 
@@ -23,4 +32,7 @@ public class ExampleInstrumentedTest {
 
         assertEquals("com.youdu.imooc_business", appContext.getPackageName());
     }
+
+
+
 }

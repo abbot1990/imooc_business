@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.youdu.imooc_business">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <instrumentation android:name="android.test.InstrumentationTestRunner"
+                     android:targetPackage="com.youdu.imooc_business"
+                     android:label="Testing"></instrumentation>
+
+
     <application
         android:name=".application.ImoocApplication"
         android:allowBackup="true"
@@ -10,6 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".activity.HomeActivity"
             android:launchMode="singleTask">
             <intent-filter>
