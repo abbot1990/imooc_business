@@ -1,6 +1,8 @@
 package com.youdu.imooc_business;
 
+
 import org.junit.Test;
+
 
 import static org.junit.Assert.*;
 
@@ -13,5 +15,11 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() throws Exception {
         assertEquals(4, 2 + 2);
+
+        Class clazz = ExampleUnitTest.class;
+        ClassLoader classLoader = clazz.getClassLoader();
+        System.out.println(classLoader.toString());
     }
+
+
 }
